@@ -4,7 +4,7 @@ import App from './App.jsx'
 import './index.css'
 import { Provider } from "react-redux"
 import { store } from "./reduxStore.js"
-import { BrowserRouter, Routes, Route, createBrowserRouter, RouterProvider } from "react-router-dom"
+import { createBrowserRouter, RouterProvider } from "react-router-dom"
 import { Login } from './auth/Login.jsx'
 import { Discover } from './pages/Discover.jsx'
 import { AuthLayout } from './auth/AuthLayout.jsx'
@@ -13,6 +13,9 @@ import { Register } from './auth/Register.jsx'
 import { Home } from './pages/Home.jsx'
 import { Subscription } from './pages/Subscription.jsx'
 import Payment from './components/Payment.jsx'
+import { Favorite } from './pages/Favorite.jsx'
+import { Chats } from './pages/Chats.jsx'
+import { Profile } from './pages/Profile.jsx'
 
 const route = createBrowserRouter([
   {
@@ -63,7 +66,7 @@ const route = createBrowserRouter([
         path: '/favorite',
         element: (
           <AuthLayout authentication>
-            <Discover />
+            <Favorite />
           </AuthLayout>
         )
       },
@@ -71,7 +74,7 @@ const route = createBrowserRouter([
         path: '/chats',
         element: (
           <AuthLayout authentication>
-            <Discover />
+            <Chats />
           </AuthLayout>
         )
       },
@@ -79,7 +82,7 @@ const route = createBrowserRouter([
         path: '/profile',
         element: (
           <AuthLayout authentication>
-            <Discover />
+            <Profile />
           </AuthLayout>
         )
       },

@@ -139,7 +139,7 @@ export const UserProfile = () => {
   const [selected, setSelected] = useState('no')
 
   if(window.location.toString().includes("user-profile")) {
-    document.getElementById('topbar').style.display = 'none'
+    document.getElementById('topbar').style.display = 'flex'
     document.getElementById('sidebar').style.display = 'none'
   }
 

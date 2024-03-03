@@ -36,13 +36,13 @@ export const Login = () => {
   }
 
   return (
-    <main className="flex w-full h-dvh">
+    <main className="flex w-full h-dvh bg-[#F7F8FC]">
       <div className="w-1/2 my-auto">
         <img
           src="./imgs/auth-img.png"
           alt=""
-          width="600"
-          className="ms-auto me-10 mb-5"
+          width="500"
+          className="ms-auto me-10 my-10"
         />
         <h1 className="text-[#E94057] text-3xl w-[40rem] text-center ms-auto me-10">
           Say Hello to meaningful connections as our advanced matching algorithm
@@ -71,7 +71,7 @@ export const Login = () => {
               <input
                 type="email"
                 id='email'
-                className="focus:outline-none text-xl w-[90%]"
+                className="focus:outline-none text-xl w-[90%] bg-transparent"
                 placeholder='Enter your email'
                 {
                   ...register('email', {
@@ -101,7 +101,7 @@ export const Login = () => {
               <input
                 type={!passwordHide ? 'password' : 'text'}
                 id='password'
-                className="focus:outline-none text-xl w-[90%]"
+                className="focus:outline-none text-xl w-[90%] bg-transparent"
                 placeholder='Enter your password'
                 {
                   ...register('password', {

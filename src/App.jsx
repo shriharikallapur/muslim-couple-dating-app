@@ -21,7 +21,7 @@ function App() {
   }, [dispatch])
 
   return !loading ? (
-    <div className='w-screen h-dvh bg-[#F7F8FC] flex'>
+    <div className='w-screen h-dvh bg-[#e2e2e2] flex'>
       <Sidebar />
       <div className='w-full h-full'>
         <Topbar />

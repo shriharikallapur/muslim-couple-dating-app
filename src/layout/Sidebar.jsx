@@ -43,7 +43,7 @@ const menuList = [
 
 export const Sidebar = () => {
   return (
-    <header id='sidebar' className='w-40 h-dvh'>
+    <header id='sidebar' className='w-40 h-dvh' style={{display: 'none'}}>
       <div className='flex w-full h-[10dvh]'>
         <img src="./imgs/logo.png" alt="" className='w-[100px] h-[100px] mx-auto my-5'/>
       </div>

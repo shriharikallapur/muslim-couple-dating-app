@@ -19,8 +19,14 @@ const Pricing = [
 ]
 
 export const Subscription = () => {
+
+  if(window.location.toString().includes("subscription")) {
+    document.getElementById('topbar').style.display = 'flex'
+    document.getElementById('sidebar').style.display = 'block'
+  }
+
   return (
-    <div className="alm arx cfj h-[90dvh]">
+    <div className="h-[90dvh] bg-[#F7F8FC] rounded-tl-lg">
       <div className="max-w-[60rem] mx-auto px-8">
         <div className=" max-w-4xl text-center mx-auto">
           <h2 className='text-[1rem] font-semibold leading-7 text-[#E94057]'>
