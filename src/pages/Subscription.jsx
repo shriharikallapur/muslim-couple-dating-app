@@ -20,7 +20,7 @@ const Pricing = [
 
 export const Subscription = () => {
   return (
-    <div className="alm arx cfj">
+    <div className="alm arx cfj h-[90dvh]">
       <div className="max-w-[60rem] mx-auto px-8">
         <div className=" max-w-4xl text-center mx-auto">
           <h2 className='text-[1rem] font-semibold leading-7 text-[#E94057]'>

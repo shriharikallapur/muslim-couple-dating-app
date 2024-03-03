@@ -25,7 +25,7 @@ function App() {
       <Sidebar />
       <div className='w-full h-full'>
         <Topbar />
-        <main className='w-full h-[90dvh]'>
+        <main className='w-full'>
           <Outlet />
         </main>
       </div>

@@ -159,7 +159,7 @@ export const UserProfile = () => {
   }
 
   return (
-    <div className='w-full h-full flex justify-center items-center'>
+    <div className='w-full h-dvh flex justify-center items-center'>
       <div className=' w-1/3'>
         <h1 className='text-[#E94057] text-5xl text-center'>Profile Details</h1>
         <div className='flex my-20'>
@@ -177,7 +177,7 @@ export const UserProfile = () => {
           </label>  
         </div>
       </div>
-      <div className='w-8/12 '>
+      <div className='w-8/12'>
       <form onSubmit={handleSubmit(userDetails)} className='grid grid-cols-3 gap-0'>
           {
             Fields.map(({ id, htmlFor, labelName, type, inputId, placeholder, hookFormfieldName }) => (

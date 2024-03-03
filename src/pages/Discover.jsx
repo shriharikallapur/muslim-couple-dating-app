@@ -5,9 +5,11 @@ export const Discover = () => {
     document.getElementById('sidebar').style.display = 'block'
   }
   return (
-    <>
-      <div>Discover</div>
-    </>
-    
+    <div className='h-[90dvh] flex justify-center items-center'>
+      <div>
+        <h1 className='text-5xl text-center'>Under Development</h1>
+        <p >please check the subscription page and don't click the "Buy Plan" Button</p>
+      </div>
+    </div>
   )
 }
